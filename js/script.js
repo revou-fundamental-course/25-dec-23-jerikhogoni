@@ -1,18 +1,18 @@
 let currentLayout = 1;
 
 function toggleLayout() {
-    const layout1 = document.getElementById('layout1');
-    const layout2 = document.getElementById('layout2');
+  const layout1 = document.getElementById('layout1');
+  const layout2 = document.getElementById('layout2');
 
-    if (currentLayout === 1) {
-        layout1.classList.remove('active');
-        layout2.classList.add('active');
-        currentLayout = 2;
-    } else {
-        layout1.classList.add('active');
-        layout2.classList.remove('active');
-        currentLayout = 1;
-    }
+  if (currentLayout === 1) {
+    layout1.classList.remove('active');
+    layout2.classList.add('active');
+    currentLayout = 2;
+  } else {
+      layout1.classList.add('active');
+      layout2.classList.remove('active');
+      currentLayout = 1;
+  }
 }
 
 function calculateArea() {
@@ -27,7 +27,7 @@ function calculateArea() {
       Luas = 0.5 * ${base} * ${height} = ${area.toFixed(2)}
     `;
   } else {
-    alert("Masukkan angka valid untuk alas dan tinggi segitiga.");
+      alert("Masukkan angka valid untuk alas dan tinggi segitiga.");
   }
 }
 
